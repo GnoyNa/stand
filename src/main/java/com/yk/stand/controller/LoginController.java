@@ -6,6 +6,8 @@ import com.yk.stand.api.CommonResult;
 import com.yk.stand.entity.UserEntity;
 import com.yk.stand.service.UserService;
 import com.yk.stand.service.impl.UserServiceImpl;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,6 +21,7 @@ public class LoginController {
 
     private final UserService userService;
 
+    @ApiOperation("用户登录")
     @RequestMapping(value = "/admin/login", method = RequestMethod.POST)
     public CommonResult login(@RequestBody UserEntity user) {
 

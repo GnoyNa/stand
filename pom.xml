@@ -20,6 +20,8 @@
         <Mybatis-Plus.version>3.4.0</Mybatis-Plus.version>
         <freemarker.version>2.3.30</freemarker.version>
         <Durid.version>1.1.17</Durid.version>
+        <swagger.version>2.9.2</swagger.version>
+        <swagger.ui.version>1.8.7</swagger.ui.version>
     </properties>
 
 
@@ -96,6 +98,19 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <!-- Mysql End -->
+
+        <!-- Swagger2 Start -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <!-- Swagger2 Start -->
 
     </dependencies>
 
