@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="stand-admin:war">
+    <output-path>$PROJECT_DIR$/stand-admin/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>stand-admin</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="stand-admin-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="stand-admin:war exploded" />
+    </root>
+  </artifact>
+</component>
